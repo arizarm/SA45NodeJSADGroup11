@@ -1,0 +1,14 @@
+{
+  "name": "adgroup11",
+  "version": "1.0.0",
+  "description": "NodeJS Project Submission",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Team 11",
+  "license": "ISC"
+}

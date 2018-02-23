@@ -10,5 +10,11 @@
     "NodeJS"
   ],
   "author": "Team 11",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.201.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0"
+  }
 }

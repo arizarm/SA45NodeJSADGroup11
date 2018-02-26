@@ -3,11 +3,11 @@ var app = express();
 var AWS = require('aws-sdk');
 
 //Add access key and secret access key
-AWS.config.accessKeyId = "";
-AWS.config.secretAccessKey = "";
+AWS.config.accessKeyId = "your access key";
+AWS.config.secretAccessKey = "your secret access key";
 
 //add region 
-AWS.config.update({region: ''});
+AWS.config.update({region: 'your region'});
 var s3 = new AWS.S3();
 // for parsing form data in json format
 var bodyParser = require('body-parser');
@@ -23,7 +23,7 @@ var imageGallery =[];
 function getImages(req,resp){
     var readParams = {
         //add bucket name
-        Bucket : '',
+        Bucket : 'your bucket name',
       };              
                                    
  // Call S3 to create the bucket
@@ -36,8 +36,8 @@ s3.listObjects(readParams, function(err, data) {
 
       var contents = data.Contents;
       contents.forEach(function (content) {
-          //add image url
-        imageGallery.push("imageUrl"+content.Key);
+          //add your bucketname here in the url
+        imageGallery.push("https://bucketname.s3.amazonaws.com/"+content.Key);
        
       });
       console.log("Success", imageGallery);

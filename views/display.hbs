@@ -14,22 +14,29 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+        <style>
+            .gallery{
+                margin :10px 50px;
+            }
+            .gallery img {
+                width:250px;
+                padding: 5px;
+           }
+           .gallery img:hover{
+               transform: scale(1.1);
+           }
+        </style>
 </head>
 
 <body>
     <h1>My Photos Gallery</h1>
     <hr>
-    
-    <table>
-     <tbody>         
-          {{#each images}}
-          <tr >
-             <td><img class="img-fluid" src ="{{this}}" width="56px"></td>       
-             <td></td>
-            </tr> 
-            {{/each}}
-        </tbody>        
-    </table> 
+     <div class="Gallery">   
+       {{#each images}}
+         <td><img class="img-thumbnail" src ="{{this}}" width="256px" height="150px"></td>                    
+       {{/each}}
+    </div>        
 </body>
 
 </HTML>

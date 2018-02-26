@@ -4,7 +4,8 @@
   "description": "NodeJS Project Submission",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "keywords": [
     "NodeJS"
@@ -15,6 +16,10 @@
     "aws-sdk": "^2.201.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "node-webcam": "^0.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.1"
   }
 }

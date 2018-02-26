@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <!-- <script type="text/javascript" src="/js/methods.js"></script> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <form method="POST" action="/upload" id="webcamForm">
+        <h2>Camera</h2>
+        <div>
+            <a href="/">Gallery</a>
+            &nbsp;&nbsp;
+            <a href="/webcam">Take a picture</a>
+        </div>
+        <hr>
+        <h4>Press the button below to take a picture and upload to Amazon S3</h4>
+        <div>
+            <label for="imageName">Image Name: </label>
+            <input type="text" name="imageName" id="imageName" required="required" />
+        </div>
+        <p style='color:red'>
+            {{fail}}
+        </p>
+        <div>
+            <button type="button" onclick="submitThisForm()">Cheese!</button>
+        </div>
+    </form>
+</body>
+
+</html>
